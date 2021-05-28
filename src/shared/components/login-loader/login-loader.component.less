@@ -1,0 +1,40 @@
+
+@import "../../../styles/cp-library/variables.less";
+
+.loader-hidden {
+    visibility: hidden;
+}
+
+.spinner-upper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color:#FFFFFFCC;
+    width: 100%;
+    height: 100%;
+    .spinner-inner {
+        padding: 20px;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: 50%;
+        border: 8px solid @cp-white;
+        border-radius: 50%;
+        border-top: 8px solid @cp-green;
+        border-right: 8px solid @cp-green;
+        border-bottom: 8px solid @cp-green;
+        // border: 8px dashed @cp-green;
+        width: 88px !important;
+        height: 88px !important;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        margin-left: -45px;
+        margin-top: -44px;
+
+        // transform: matrix(0, -1, 1, 0, 0, 0);
+
+    }
+}

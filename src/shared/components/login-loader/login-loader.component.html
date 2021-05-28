@@ -1,0 +1,4 @@
+<div class="spinner-upper" [ngClass]="!show ? 'loader-hidden' : (spinnerText ? 'bg-dark': '')">
+    <div class="spinner-inner"></div>
+    <div class="spinner-text roboto-slab-bold" *ngIf="spinnerText" [innerHtml]="spinnerText"></div>
+</div>

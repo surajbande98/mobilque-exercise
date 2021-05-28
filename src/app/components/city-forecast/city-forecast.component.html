@@ -1,0 +1,23 @@
+
+    <div class="d-flex flex-column container foreact_wrapper">
+
+
+        <h5 class="title">Next 5 days forecast @9:00</h5>
+        <div class="cities_wrapper row justify-content-center">
+    
+            <a class="city_tile position-relative" *ngFor="let city of foreCastData;let i = index;">
+    
+                <div class="day">
+                    {{i + 1}}
+                </div>
+                <div class="city_temp">
+                    {{city.main.temp}} °C
+                </div>
+    
+                <div class="city_time">
+                    {{city.main.sea_level}}
+                </div>
+            </a>
+    
+        </div>
+    </div>

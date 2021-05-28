@@ -1,0 +1,28 @@
+<div class="cities_landing container">
+
+    <h5 class="title">Weather forecast by City</h5>
+
+    <div class="cities_wrapper row justify-content-center">
+
+        <a class="city_tile" *ngFor="let city of allCitiesData;" routerLink="/cities/{{city.name}}">
+            <div class="city_name">
+                {{city.name}}
+            </div>
+
+            <div class="city_temp">
+                {{city.main.temp}} °C
+            </div>
+
+            <div class="city_time">
+                <i class="bi bi-sunrise"></i> {{city.sys.sunrise | formatTime}}
+            </div>
+
+            <div class="city_time">
+                <i class="bi bi-sunset-fill"></i> {{city.sys.sunset | formatTime}}
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<router-outlet></router-outlet>
