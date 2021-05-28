@@ -12,10 +12,9 @@ import { SharedModule } from 'src/shared/shared.module';
 import { CitiesForecastComponent } from './components/cities-forecast/cities-forecast.component';
 import { WeatherDataService } from './services/weather-data.service';
 import { CityForecastComponent } from './components/city-forecast/city-forecast.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, CitiesForecastComponent, CityForecastComponent, NotFoundComponent],
+  declarations: [AppComponent, CitiesForecastComponent, CityForecastComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
